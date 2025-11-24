@@ -1,0 +1,50 @@
+:root {
+  --beige: #f5f5dc;
+  --light-card: #fffaf0;
+  --text-dark: #333;
+}
+
+body {
+  background-color: var(--beige);
+  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero */
+.hero {
+  min-height: 60vh;
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 { font-size: 3rem; font-weight: 700; }
+.hero p { font-size: 1.5rem; }
+
+/* Menu Cards */
+.menu-card {
+  background-color: var(--light-card);
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Gallery Images */
+.hover-zoom { transition: transform 0.3s, box-shadow 0.3s; }
+.hover-zoom:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+
+/* Fade Animations */
+.fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.fade-up { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+
+/* Carousel Review */
+#reviews p { margin: 0 auto; }
+
+/* Scroll Animation JS will add visible class */
+.visible { opacity: 1 !important; transform: translateY(0) !important; }
