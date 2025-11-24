@@ -1,0 +1,1 @@
+This is a responsive single-page restaurant website built using HTML, CSS, JavaScript, and Bootstrap. The website showcases the restaurant’s menu, gallery, reviews, and contact information in an attractive, user-friendly layout.
